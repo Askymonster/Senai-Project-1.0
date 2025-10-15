@@ -29,7 +29,7 @@ with aba1:
     with col2:
         st.subheader("Cosseno")
         ang2 = st.slider('''Ángulo $ \\alpha $''',0,90, key = "cos")
-        CA = st.number_input("Cateto Adjacente (c)")
+        CA = st.number_input("Cateto Adjacente (a)")
         H1 = np.round(CA/np.cos(ang*np.pi/180),2)
         st.subheader("Hipotenusa")
         st.subheader(f"{H1}")        
@@ -42,4 +42,5 @@ with aba1:
         st.subheader("Cateto Adjacente")
         st.subheader(f"{CA}")
         
+
     
